@@ -12,5 +12,23 @@ int main()
  scanf("%d",&n);
  printf("\n Enter  resources available : ");
  scanf("%d",&r);
- printf("\nEnter insatnces for resources :\n");
+ printf("\nEnter instances for resources :\n");
  for(i=0;i<r;i++)
+  {
+ printf("p%d",i+1);          p[i]=0;
+ for(j=0;j<r;j++)
+ {
+  scanf("%d",&alloc[i][j]);
+ }
+}
+  printf("\n Enter MAX matrix  \n");
+
+ for(i=0;i<n;i++)
+ {
+ printf("p%d",i+1);
+ for(j=0;j<r;j++)
+ {
+  scanf("%d",&max[i][j]);
+ }
+ }
+
