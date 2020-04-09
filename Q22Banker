@@ -48,3 +48,25 @@ k=0;     cntt=0;
  {  cnt=0;
  for(j=0;j<r;j++)
  {
+  if(p[i]==1) break;
+  if(need[i][j]<=avail[j])
+  {
+  cnt++;
+  }
+  if(cnt==r)
+  {
+  for(j=0;j<r;j++)
+  {
+  avail[j]+=alloc[i][j];
+  }
+  printf("p%d\t",i+1);  p[i]=1;     cntt++;
+  }
+ }
+ } k++;
+ }
+ if(cntt<n-1)
+ {
+ printf("\n deadlock ");
+ }
+      getch();
+ }
